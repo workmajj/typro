@@ -1,27 +1,27 @@
-adj(h, u).
-adj(h, j).
-adj(h, n).
-adj(h, b).
-adj(h, g).
-adj(h, y).
+adj(h, 30, u).
+adj(h, 90, j).
+adj(h, 150, n).
+adj(h, 210, b).
+adj(h, 270, g).
+adj(h, 330, y).
 
-adj(e, 4).
-adj(e, r).
-adj(e, d).
-adj(e, s).
-adj(e, w).
-adj(e, 3).
+adj(e, 30, 4).
+adj(e, 90, r).
+adj(e, 150, d).
+adj(e, 210, s).
+adj(e, 270, w).
+adj(e, 330, 3).
 
-adj(l, p).
-adj(l, semi).
-adj(l, period).
-adj(l, comma).
-adj(l, k).
-adj(l, o).
+adj(l, 30, p).
+adj(l, 90, semicolon).
+adj(l, 150, period).
+adj(l, 210, comma).
+adj(l, 270, k).
+adj(l, 330, o).
 
-adj(o, 0).
-adj(o, p).
-adj(o, l).
-adj(o, k).
-adj(o, i).
-adj(o, 9).
+adj(o, 30, 0).
+adj(o, 90, p).
+adj(o, 150, l).
+adj(o, 210, k).
+adj(o, 270, i).
+adj(o, 330, 9).
