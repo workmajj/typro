@@ -1,3 +1,31 @@
+key(h).
+key(u).
+key(j).
+key(n).
+key(b).
+key(g).
+key(y).
+
+key(e).
+key(4).
+key(r).
+key(d).
+key(s).
+key(w).
+key(3).
+
+key(l).
+key(p).
+key(semicolon).
+key(period).
+key(comma).
+key(k).
+key(o).
+
+key(0).
+key(i).
+key(9).
+
 adj(h, 30, u).
 adj(h, 90, j).
 adj(h, 150, n).
@@ -25,3 +53,8 @@ adj(o, 150, l).
 adj(o, 210, k).
 adj(o, 270, i).
 adj(o, 330, 9).
+
+adjacent(Key1, Angle, Key2) :-
+    key(Key1),
+    key(Key2),
+    adj(Key1, Angle, Key2).
