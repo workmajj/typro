@@ -1,3 +1,4 @@
+% all keys
 key(0).
 key(1).
 key(2).
@@ -35,6 +36,7 @@ key(x).
 key(y).
 key(z).
 
+% first row
 adj(1, 90, 2).
 adj(1, 150, q).
 adj(2, 90, 3).
@@ -55,6 +57,7 @@ adj(9, 90, 0).
 adj(9, 150, o).
 adj(0, 150, p).
 
+% second row
 adj(q, 90, w).
 adj(q, 150, a).
 adj(w, 90, e).
@@ -74,6 +77,7 @@ adj(i, 150, k).
 adj(o, 90, p).
 adj(o, 150, l).
 
+% third row
 adj(a, 90, s).
 adj(a, 150, z).
 adj(s, 90, d).
@@ -90,13 +94,13 @@ adj(j, 90, k).
 adj(j, 150, m).
 adj(k, 90, l).
 
+% e.g., adjacent(d, 90, f)
 adjacent(Key1, Angle, Key2) :-
     key(Key1),
     key(Key2),
     adj(Key1, Angle, Key2).
 
+% e.g., adjacent(f, 270, d)
 adjacent(Key1, Angle, Key2) :-
-    key(Key1),
-    key(Key2),
     Opposite is Angle - 180,
-    adj(Key2, Opposite, Key1).
+    adjacent(Key2, Opposite, Key1).
